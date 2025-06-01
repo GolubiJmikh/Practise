@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .container {
+                display: flex;
+            }
+
+            .gallery {
+                width: 500px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .gallery img {
+                width: 100px;
+                height: 200px;
+                opacity: 0.5;
+                transition: all 0.3s ease;
+            }
+
+            .gallery img:hover {
+                opacity: 1;
+                margin: 20px;
+                border: 3px solid navy;
+            }
+
+            .text {
+                width: 300px;
+            }
+
+            .text p, em {
+                color: rgb(198, 252, 252);
+                font-size: 40px;
+            }
+
+            .text em {
+                display: block;
+                text-align: right;
+            }
+
+            .text p:hover {
+                font-size: 45px;
+                color: navy;
+            }
+
+            .text .right:hover {
+                color: darkorange;
+            }
+
+            header {
+                border-bottom: 1px dashed black;
+            }
+
+            header::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            header a {
+                text-decoration: none;
+                float: right;
+                margin-left: 50px;
+                padding-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="Контакты">Контакты</a>
+            <a href="акции">Сезонные акции</a>
+        </header>
+
+        <h1 style="text-align: center;">Горные экскурсии!</h1>
+
+        <div class="container">
+            <div class="gallery">
+                <img src="https://i.pinimg.com/originals/bf/c9/79/bfc97974171beb21b111b7526b154c38.jpg">
+                <img src="https://www.tapeciarnia.pl/tapety/na-telefon/tapeta-na-telefon-sciezka-nad-rzeka-o-poranku.jpg">
+                <img src="https://i.pinimg.com/474x/97/5f/e0/975fe0826b4446ec07bd36fc3d50844f.jpg">
+                <img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/Biomes_Forests_ConiferousForests_00051.jpg">
+                <img src="https://i.pinimg.com/736x/cb/2e/a0/cb2ea0d3759eb93a7523c6473335a42c.jpg">
+                <img src="https://i.pinimg.com/736x/22/e2/18/22e218a6f1c7983f19ae748631406234.jpg">
+            </div>
+
+            <div class="text">
+                <p>Только</p>
+                <em class="right">горы!</em>
+                <p>Только</p>
+                <em class="right">вперед!</em>
+            </div>
+        </div>
+    </body>
+</html>

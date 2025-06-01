@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial;
+            }
+
+            .posts {
+                width: 1000px;
+                height: 450px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            header {
+                background-color: navy;
+                padding: 10px;
+            }
+
+            .link-container {
+                background-color: white;
+                color: black;
+                text-decoration: none; 
+                border: 1px solid white;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 5px;
+            }
+
+            .linktwo {
+                background-color: #2adede;
+                border: 1px solid #2adede;
+                color: black;
+                text-decoration: none;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 5px;
+            }
+
+            .p_main {
+                float: left;  
+                width: 250px; 
+                padding: 15px;
+                box-sizing: border-box;
+                flex-grow: 1;
+                border: 1px solid navy;
+                border-radius: 10px;
+                position: relative;
+                text-align: center;
+            }
+
+            .p_main:hover {
+                box-shadow: 0 5px 5px 5px navy;
+                transition: box-shadow 0.3s ease;
+            }
+
+            .p_main img.post-img {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                margin-top: 10px;
+            }
+
+            .icon-wrapper {
+                display: flex;
+                justify-content: left;
+                margin-bottom: 10px;
+                margin-top: -35px;
+            }
+
+            .icon-img {
+                width: 50px;
+                height: 50px;
+                opacity: 0.5;
+            }
+
+            .p_main:hover .icon-img {
+                opacity: 1;
+            }
+
+            .footer {
+                background-color: #8fddf2;
+                padding: 10px;
+            }
+
+            .footer p {
+                background-color: white;
+                padding: 5px;
+                margin: 5px 0;
+            }
+
+            h1 {
+                font-size: 30px;
+                text-align: center;
+                border-bottom: 2px solid navy;
+                font-weight: normal; 
+                padding-bottom: 5px;
+            }
+
+            .kursiv {
+                font-style: italic;  
+                background-color: navy;
+                color: white; 
+            }
+
+            h2 {
+                color: blueviolet;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://avatars.mds.yandex.net/i?id=aef4e4f51d8055de46cae85b63aef3841f5ae2b6-7698965-images-thumbs&n=13" height='50px'; width="150px">
+            <a href="#новости" class="linktwo">Новости</a>
+            <a href="#конкурс" class="link-container">Конкурс</a>
+            <a href="#планы" class="link-container">Планы развития</a>
+        </header>
+
+        <h1>Pixel Design</h1>
+        <h2 id="новости">Наши последние новости</h2>
+
+        <div class="posts">
+            <div class="p_main">
+                <div class="icon-wrapper">
+                    <img src="https://chizhik182.ru/images/banners/img_451620.png" class="icon-img">
+                </div>
+                <img src="https://avatars.mds.yandex.net/i?id=ccfe6af929a5c549105b3211ea588108822608b7-4533669-images-thumbs&n=13" class="post-img">
+                В нашей студии новый дизайнер: пиксель <em>Cube</em>. Именно он будет выполнять ваши заказы по трехмерной графике. Увлекается ландшафтным интерьерным дизайном. Недавно он давал интервью газете <span class="kursiv">Progress news</span>.
+            </div>
+
+            <div class="p_main">
+                <div class="icon-wrapper">
+                    <img src="https://chizhik182.ru/images/banners/img_451620.png" class="icon-img">
+                </div>
+                <img src="https://avatars.mds.yandex.net/i?id=6c79e9a72966f41dfbbe3f6e29ac632f7c240975-5130368-images-thumbs&n=13" class="post-img">
+                Весной следующего года мы участвуем в конкурсе дизайна. Наши работы будут представлены в направлениях: <span class="kursiv">веб-дизайн, полиграфический дизайн, дизайн интерьеров.</span> По каждому направлению мы собираемся представить несколько работ, которые пройдут предварительный отбор в нашей студии.
+            </div>
+
+            <div class="p_main">
+                <div class="icon-wrapper">
+                    <img src="https://chizhik182.ru/images/banners/img_451620.png" class="icon-img">
+                </div>
+                <img src="https://avatars.mds.yandex.net/i?id=3321ceeb05170156f53138d5f65b75eaefad1bd4-10024862-images-thumbs&n=13" class="post-img">
+                В этом месяце мы готовим <span class="kursiv">годовое планирование нашей работы</span>. Кроме того, что мы принимаем и выполняем клиентские заказы по дизайну, мы участвуем в конкурсах, учимся на онлайн курсах, повышающих наше мастерство, просматриваем сборники лучших работ, которые можно найти в Интернете.
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p><em><strong>Контакты</strong></em></p>
+            <p>Адрес: г. Техноград, ул. Дисплейная, 15</p>
+            <p>Тел.: 8895-6341</p>
+        </footer>
+    </body>
+</html>
